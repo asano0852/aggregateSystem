@@ -38,14 +38,14 @@ def StudioList():
         result[stripe_username] = target
     return result
 
-#xxx
+#一つずつstudioの数をカウント
 def Unique(studio_total):
     studio_count = {}
     for studio in list(studio_total.values()):
         Inc(studio, studio_count)
     return studio_count
 
-#xxx
+#
 def Transpose(studio_count):
     studio_array = {}  # 縦型のリスト化
     studio_array["studio"] = list(studio_count.keys())
